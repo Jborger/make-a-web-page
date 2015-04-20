@@ -1,0 +1,268 @@
+<!--html and css addapted from http://codepen.io/AndyAtUdacity/pen/KweNKa?editors=110 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NanoDegree Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#section1">Lesson 1: The Basics of the World Wide Web</a>
+        <ul>
+          <li><a href="#section1.1">The Web</a></li>
+          <li><a href="#section1.2">HTML</a></li>
+          <li><a href="#section1.3">Attributes</a></li>
+          <li><a href="#section1.4">Inline vs Block Elements</a></li>
+          <li><a href="#section1.5">Span vs DIV</a></li>
+          <li><a href="#section1.6">Docuemnt Structure</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#section2">Lesson 2: How Learning to code works</a>
+        <ul>
+          <li><a href="#section2.1">4 Stages of Expertise</a></li>
+          <li><a href="#section2.2">Webpages, Documents and Structure</a></li>
+          <li><a href="#section2.3">HTML-CSS-DOM</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#section3">Lesson 3: Adding CSS Style & HTML Structure</a>
+        <ul>
+          <li><a href="#section3.1">Cascading Style Sheets</a></li>
+          <li><a href="#section3.2">Inheritance</a></li>
+          <li><a href="#section3.3">Selector</a></li>
+          <li><a href="#section3.4">Box Revisited</a></li>
+          <li><a href="#section3.5">Code, Test, Refine</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+
+
+<!--begin notes section-->
+
+<!--LESSON 1 NOTES START-->
+
+  <h1>Class Notes</h1>
+  <div class="lesson">
+    <h2 id="section1">Lesson 1: Basics of the the World Wide Web</h2>
+    <div class="section" id="section1.1">
+      <div class="section-title">
+        The Web
+      </div>
+      <div class="section-description">
+        <p>The Web is a collection of Documents written in HTML.  HTML stands for HyperText Markup Language, and is the basis for each document on the web. The web works by your browser requesting a document on a server over HTTP.  This is done either via the internet or a local network.
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section1.2">
+      <div class="section-title">
+        HTML
+      </div>
+      <div class="section-description">
+        <p>
+          HTML is made up of text content, markup(how its arrianged), audio/video and links.  Markup is made with the follow syntax: 
+          <Span class="code">
+          &lt;name of tag&gt;Contents&lt;/name of tag&gt;
+       </span>
+          In some cases tags tags may be void as they have no content. An example of this would be the code used to insert a picture into an html document
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section1.3">
+      <div class="section-title">
+        Attibutes
+      </div>
+      <div class="section-description">
+        <p>
+        Attributes  are items that can be attached to tags.  The syntax is as follows:
+  
+          <Span class="code">
+             &lt;name of tag attribute ="value"&gt;Contents&lt;/name of tag&gt;
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section1.4">
+      <div class="section-title">
+        Inline vs Block Elements
+      </div>
+      <div class="section-description">
+        <p>
+          Inline and Block is a way to format text on a document.  A block element takes up the width and height available.  Block elements provides line breaks before and after the content.  This can be further customized by specifing height and width.  Inline is simply a line break.
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section1.5">
+      <div class="section-title">
+        Span vs DIV
+      </div>
+      <div class="section-description">
+        <p>
+         Span is a inline element.  Div is a block element.  Both have a similar syntax: A Span is expressed as: 
+         <span class ="code">&lt;span class="foo"&gt;Content&lt;/span&gt;</span>.  While a DIV is expressed as:
+         <span class ="code">&lt;div class="bar"&gt;Content&lt;/div&gt;</span>
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section1.6">
+      <div class="section-title">
+        Document Structure
+      </div>
+      <div class="section-description">
+        <p>
+         The structure of a HTML is detailed below:
+         <BR>
+         <span class ="code">&lt;doctype html&gt;&lt;/doctype&gt;<br/>
+&lt;html&gt;<br/>
+  &lt;head&gt;<br/>
+    &lt;title&gt;Title of Document&lt;/title&gt;<br/>
+Other MetaData<br/>
+  &lt;/head&gt;<br/>
+  &lt;body&gt;<br/>
+Document content<br/>
+&lt;/body&gt;<br/>
+&lt;html&gt;<br/></span>
+        </p>
+      </div>
+    </div>
+  </div>
+<!--LESSON 1 NOTES END-->
+
+  <!--LESSON 2 NOTES START-->
+  <div class="lesson">
+    <h2 id="section2">How Learning to code works</h2>
+    <div class="section" id="section2.1">
+      <div class="section-title">
+        4 stages of expertise
+      </div>
+      <div class="section-description">
+        <p>
+          4 stages of expertise
+          <ol>
+            <li>Ignorance - Know nothing</li>
+            <li>Awareness - Have general idea of concept</li>
+            <li>Ability - Can preform at a basic to intermediate level</li>
+            <li>Fluncey - Full knowledge and understanding</li> 
+          </ol>
+        
+      </div>
+    </div>
+    <div class="section" id="section2.2">
+      <div class="section-title">
+        Webpages, Documents and Structure
+      </div>
+      <div class="section-description">
+        <p>
+          HTML documents have a structure that can be described like a tree.  Within the HTML tag (Trunk), you can create subtags (Branches) to define additonal form of your document. This structure is governed by the Document Object Model, or DOM.  The DOM provides a API for creating a structured, tree like model used in HTML.
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section2.3">
+      <div class="section-title">
+        HTML-CSS-DOM
+      </div>
+      <div class="section-description">
+        <p>
+          <ol>
+            <li>HTML - HTML is the language of the Web.  HTML has a syntax and rules on how it is displayed. </li>
+            <li>CSS - CSS is the syntax and rule of how content is displayed on a document.</li>
+            <li>DOM - Document Object Model</li> 
+          </ol>
+       
+      </div>
+    </div>
+  </div>
+
+<!--LESSON 2 NOTES END-->
+
+<!--LESSON 3 NOTES START-->
+
+  <div class="lesson">
+    <h2 id="section3">Lesson 3: Adding CSS Style & HTML Structure</h2>
+    <div class="section" id="section3.1">
+      <div class="section-title">
+        Cascading Style Sheets
+      </div>
+      <div class="section-description">
+        <p>
+          Cascading Style Sheets or CSS is the syntax and rule of how content is displayed on a document.  They work at a broad page level and get more specific to each element.  CSS can be applied inline to the element, linked to from the HTML, or builtin to the document head.
+        </p>
+      </div>
+    </div>
+
+        <div class="section" id="section3.2">
+      <div class="section-title">
+        Inheritance
+      </div>
+      <div class="section-description">
+        <p>
+          CSS has a Parent Child relationship with child objects.  Child objects inherit text related properties, but not box related properties.  Items that can be inheritied in the CSS chain include:
+          <ol>  
+            <li>Color</li>
+            <li>Font</li>
+            <li>Space of Characters</li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="section" id="section3.3">
+      <div class="section-title">
+        Selector
+      </div>
+      <div class="section-description">
+        <p>
+          A Selector is a element on the page in which style will apply to. The Syntax of CSS is: <span class="code">Element of Class{style}</span>  When applying style the syntax is: <span class="code">nameOfAttribute: Value;</span>.  This makes up the decleration.
+        </p>
+      </div>
+    </div>
+       <div class="section" id="section3.4">
+      <div class="section-title">
+        Box Revisited
+      </div>
+      <div class="section-description">
+        <p>
+          Boxes include the following:
+         <ol>
+          <li>Margin - Clears area around the border</li>
+          <li>Padding - Clears the area around the content.  This is the space inside of the box that protect the content.</li>
+          <li>Border - Applied around the Padding and Content</li>
+          <li>Content - Image or text</li>
+        </ol>
+       
+        <p>
+          Sizing can be applied to boxes.  A best practice is to use Precentage rather than Pixels.</P>
+      </div>
+    </div>
+   <div class="section" id="section3.5">
+      <div class="section-title">
+        Code, Test, Refine
+      </div>
+      <div class="section-description">
+        <p>
+          <ol>
+            <li>Look for Boxes</li>
+            <li>Look for repeated styles and semantic elements</li>
+            <li>Write HTML</li>
+            <li>Apply Style</li>
+            <li>Fix Things</li>
+          </ol>
+       
+      </div>
+    </div>
+  </div>
+
+  <!--LESSON 3 NOTES END-->
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!"/>
+    </a>
+</p>
+
+</body>
+</html>
